@@ -11,7 +11,7 @@ export default function Hero() {
 			}}
 			className="min-h-screen z-10"
 		>
-			<div className="pt-40 w-[90%] flex flex-col gap-12 mx-auto max-w-4xl text-center text-white">
+			<div className="pt-40 w-[90%] flex flex-col gap-12 mx-auto max-w-5xl text-center text-white">
 				<div className="flex flex-col gap-6 z-10 relative">
 					<Reveal delayTime={0.1}>
 						<div className="flex mb-2">
@@ -22,17 +22,17 @@ export default function Hero() {
 					</Reveal>
 					<Reveal delayTime={0.1}>
 						<h2 className="text-4xl md:text-5xl xl:text-7xl font-semibold">
-							Introducing AI-powered{' '}
+							Boost Ad Tracking by 30%+ with our{' '}
 							<span className="gradient-text">
-								ecommerce reporting
+								AI-powered tracking script
 							</span>
 						</h2>
 					</Reveal>
 					<Reveal delayTime={0.2}>
 						<p className="text-lg max-w-xl mx-auto text-gray-200">
-							Software tailored to ambitious ecommerce agencies
-							and fast-growing ecommerce companies. Increase your
-							profits, save time and get.
+							Track 30%+ more orders in Google & Meta Ads with our
+							AI-powered server-side tracking. Boost your ROAS and
+							stop advertising in the dark.
 						</p>
 					</Reveal>
 				</div>

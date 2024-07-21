@@ -1,6 +1,4 @@
 import Navbar from './Navbar'
-import Footer from './Footer'
-import localFont from 'next/font/local'
 import Meta from './Meta'
 
 type LayoutProps = {
