@@ -16,7 +16,7 @@ type NavbarProps = {
 	whiteBeforeScroll?: boolean
 }
 
-export default function Navbar(props:NavbarProps) {
+export default function Navbar(props: NavbarProps) {
 	const [menuClicked, setMenuClicked] = useState(false)
 	const router = useRouter()
 	const scrolled = useScroll(50)
@@ -28,21 +28,33 @@ export default function Navbar(props:NavbarProps) {
 					'h-[58px] w-full transition-all flex items-center',
 					scrolled
 						? ' bg-white'
-						: props.whiteBeforeScroll ? 'bg-transparent':'bg-white'
+						: props.whiteBeforeScroll
+							? 'bg-transparent'
+							: 'bg-white'
 				)}
 			>
 				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<h2 className={cn("text-white font-semibold text-xl", scrolled && "text-black")}>Reaktion<span className='font-normal'>.Ai</span></h2>
+						<h2
+							className={cn(
+								'text-white font-semibold text-xl',
+								scrolled && 'text-black'
+							)}
+						>
+							Reaktion<span className="font-normal">.Ai</span>
+						</h2>
 					</div>
 					<div
 						className={cn(
 							'flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm'
 						)}
+					></div>
+					<div
+						className={cn(
+							'w-[250px] items-center justify-end gap-5 font-medium text-white flex',
+							scrolled && 'text-black'
+						)}
 					>
-
-					</div>
-					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-white flex", scrolled && "text-black")}>
 						<RefLink
 							className="hidden font-medium text-sm sm:flex"
 							href={'https://app.toolbird.io/auth/login'}
@@ -51,7 +63,11 @@ export default function Navbar(props:NavbarProps) {
 						</RefLink>
 						<RefLink
 							href={'https://app.toolbird.io/auth/register'}
-							className={cn("bg-white border-[3px] white font-semibold text-sm text-green-900 px-4 py-1 rounded-full", scrolled && "bg-green-900 border-green-900 text-white")}
+							className={cn(
+								'bg-white border-[3px] white font-semibold text-sm text-green-900 px-4 py-1 rounded-full',
+								scrolled &&
+									'bg-green-900 border-green-900 text-white'
+							)}
 						>
 							Join the waitlist
 						</RefLink>

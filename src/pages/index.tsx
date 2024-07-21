@@ -1,7 +1,7 @@
-import Hero from "@/components/hero";
-import Layout from "@/components/Layout";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import SectionIntro from "@/components/ui/SectionIntro";
+import Hero from '@/components/hero'
+import Layout from '@/components/Layout'
+import { BackgroundBeams } from '@/components/ui/background-beams'
+import SectionIntro from '@/components/ui/SectionIntro'
 
 export default function Home() {
 	return (
